@@ -65,7 +65,7 @@ class IndexController extends WechatController {
 
         $info=$user->find(['username='.$user_i]);
 
-
+//        var_dump($info);exit;
         $this->assign('info',$info);
         $this->display();
     }

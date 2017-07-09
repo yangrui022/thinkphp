@@ -1,0 +1,86 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>活动管理</h2>
+    </div>
+
+    <div class="cf">
+
+        <button class="btn ajax-post" url="{:U('changeStatus?method=resumevo')}" target-form="ids">启 用</button>
+        <button class="btn ajax-post" url="{:U('changeStatus?method=forbidvo')}" target-form="ids">禁 用</button>
+        <button class="btn ajax-post confirm" url="{:U('changeStatus?method=deletevo')}" target-form="ids">删 除</button>
+    </div>
+
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+            <tr>
+                <th class="row-selected">
+                    <input class="checkbox check-all" type="checkbox">
+                </th>
+                <th class="">ID</th>
+                <th class="">申请人</th>
+                <th class="">活动标题</th>
+                <th class="">活动简介</th>
+                <th class="">截止时间</th>
+                <th class="">申请时间</th>
+                <th class="">状态</th>
+                <th class="">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="" id="" value="{$vo['id']}"> </td>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.username}</td>
+                        <td>{$vo.title}</td>
+                        <td>{$vo.description}</td>
+
+                        <td>{:date('Y-m-d H:i:s',$vo['deadline'])}</td>
+                        <td>{:date('Y-m-d H:i:s',$vo['create_time'])}</td>
+                        <td>{$vo['status']==1?'审核通过':'未通过'}</td>
+                        <td>
+
+                            <a href="{:U('setStatus?ids='.$vo['id'].'&status='.abs(1-$vo['vo_status']))}" class="ajax-get">{$vo.status|show_status_op}</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('del?id='.$vo['id'])}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                <else/>
+                <td colspan="6" class="text-center"> aOh! 暂时还没有内容! </td>
+            </notempty>
+            </tbody>
+        </table>
+    </div>
+    <div class="page">
+       {$page}
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            //点击排序
+            $('.list_sort').click(function(){
+                var url = $(this).attr('url');
+                console.log(url);
+                var ids = $('.ids:checked');
+                var param = '';
+                if(ids.length > 0){
+                    var str = new Array();
+                    ids.each(function(){
+                        str.push($(this).val());
+                    });
+                    param = str.join(',');
+                }
+
+                if(url != undefined && url != ''){
+                    window.location.href = url + '/ids/' + param;
+                }
+            });
+        });
+    </script>
+</block>

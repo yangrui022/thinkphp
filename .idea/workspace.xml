@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="889e2c72-6eb0-4786-8ff9-d2ced848390d" name="默认" comment="" />
+    <list default="true" id="889e2c72-6eb0-4786-8ff9-d2ced848390d" name="默认" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/Application/Admin/Controller/ActiveController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/Application/Admin/View/Active/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/XQactiveController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Application/Admin/Controller/SaleController.class.php" afterPath="$PROJECT_DIR$/wwwroot/Application/Admin/Controller/SaleController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ActiveController.class.php" afterPath="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ActiveController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/index.html" afterPath="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/index.html" afterPath="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/register.html" afterPath="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Admin/b956215329b6f9aca22277599a4efdfc.php" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Admin/b956215329b6f9aca22277599a4efdfc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Wechat/06e22e6c897858557a084d1b29a53555.php" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Wechat/06e22e6c897858557a084d1b29a53555.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Wechat/646b2b107d3939f66db7dc25cfcb643f.php" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Wechat/646b2b107d3939f66db7dc25cfcb643f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Wechat/65e80c8141ee8e3c51ba79348e77f841.php" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Wechat/65e80c8141ee8e3c51ba79348e77f841.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Wechat/a4bd437ddf36aeffc4f8d186afe663a8.php" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Cache/Wechat/a4bd437ddf36aeffc4f8d186afe663a8.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Logs/Admin/17_07_09.log" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Logs/Admin/17_07_09.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Logs/Common/17_07_09.log" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Logs/Common/17_07_09.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Logs/Home/17_07_09.log" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Logs/Home/17_07_09.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Logs/Wechat/17_07_09.log" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Logs/Wechat/17_07_09.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Temp/2a4b5544a2e6585c64f076e04bfe6d2d.php" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Temp/2a4b5544a2e6585c64f076e04bfe6d2d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Temp/32f83298d24ab248d6c45cf8089d26ab.php" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Temp/32f83298d24ab248d6c45cf8089d26ab.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/Runtime/Temp/f2f413580f93c833438d7ff8d5d7d5c7.php" afterPath="$PROJECT_DIR$/wwwroot/Runtime/Temp/f2f413580f93c833438d7ff8d5d7d5c7.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,126 +40,100 @@
       <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2200">
-              <caret line="108" column="6" lean-forward="false" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="25" />
+            <state relative-caret-position="374">
+              <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XQactiveController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/XQactiveController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2398">
+              <caret line="114" column="33" lean-forward="false" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActiveController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/Controller/ActiveController.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding>
-                <element signature="e#510#532#0#PHP" expanded="true" />
+                <element signature="e#125#146#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Service/index.html">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/View/Sale/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="137" column="116" lean-forward="false" selection-start-line="137" selection-start-column="116" selection-end-line="137" selection-end-column="116" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1174#1181#1" expanded="true" />
-                <marker date="1499561962744" expanded="true" signature="4527:5459" ph="..." />
-                <marker date="1499561962744" expanded="true" signature="4621:5411" ph="..." />
-                <marker date="1499561962744" expanded="true" signature="4693:4792" ph="..." />
-                <marker date="1499561962744" expanded="true" signature="4693:4873" ph="..." />
-                <marker date="1499561962744" expanded="true" signature="4946:5017" ph="..." />
-                <marker date="1499561962744" expanded="true" signature="4946:5255" ph="..." />
-                <marker date="1499561962744" expanded="true" signature="4946:5361" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Service/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="60" column="7" lean-forward="false" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="88">
+              <caret line="61" column="3" lean-forward="false" selection-start-line="61" selection-start-column="3" selection-end-line="63" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/login.html">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="10" selection-end-column="62" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1143#1150#1" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1144">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/detail.html">
+      <file leaf-file-name="SaleController.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/Controller/SaleController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="308">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/View/Active/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="154" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="60" column="55" lean-forward="false" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/my.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-726">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActiveController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ActiveController.class.php">
+      <file leaf-file-name="MemberModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Model/MemberModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.shtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Html/login.shtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1672">
-              <caret line="76" column="10" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="76" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wechat.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/wechat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="138" column="153" lean-forward="false" selection-start-line="138" selection-start-column="153" selection-end-line="138" selection-end-column="153" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1174#1181#1" expanded="true" />
-                <marker date="1499561989201" expanded="true" signature="4572:5509" ph="..." />
-                <marker date="1499561989201" expanded="true" signature="4666:5461" ph="..." />
-                <marker date="1499561989201" expanded="true" signature="4738:4918" ph="..." />
-                <marker date="1499561989201" expanded="true" signature="4991:5411" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ServiceController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="72" column="5" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
+            <state relative-caret-position="-352">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,6 +145,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -156,11 +156,13 @@
       <find>..</find>
       <find>wchat</find>
       <find>page</find>
+      <find>sale</find>
     </findStrings>
     <replaceStrings>
       <replace>Public/Wechat</replace>
       <replace>Public/wechat</replace>
       <replace>wechat</replace>
+      <replace>vo</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\tp\wwwroot</dir>
@@ -172,13 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/Controller/CenterController.class.php" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/View/Center/index.html" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/View/Sale/index.html" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/Controller/SaleController.class.php" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/Model/SaleModel.class.php" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/View/Sale/add.html" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/View/Sale/edit.html" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/Login/index.html" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/LoginController.class.php" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/WechatController.class.php" />
@@ -209,17 +204,27 @@
         <option value="$PROJECT_DIR$/wwwroot/Html/login.shtml" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Common/Conf/config.php" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/login.html" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/register.html" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/service.html" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Service/detail.html" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/notice.html" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ServiceController.class.php" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Article/index.html" />
-        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/index.html" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Service/index.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/index.html" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/index.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/detail.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/index.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/baoming.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Public/Wechat/js/my.js" />
         <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ActiveController.class.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/XQactiveController.class.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/View/Active/index.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/register.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/detail.html" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/Controller/ActiveController.class.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Application/Admin/Controller/SaleController.class.php" />
       </list>
     </option>
   </component>
@@ -252,8 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,7 +297,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
+              <option name="myItemId" value="ThinkPHP" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,45 +315,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="ThinkPHP" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Wechat" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wwwroot" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wechat" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
+              <option name="myItemId" value="Library" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -368,76 +337,22 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="ThinkPHP" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Wechat" />
+              <option name="myItemId" value="Library" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wwwroot" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wechat" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Active" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wwwroot" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="Vendor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,11 +373,11 @@
       <recent name="D:\tp\wwwroot\Application\Wechat\View\default\Index" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\tp\wwwroot\Application\Admin\View\Active" />
+      <recent name="D:\tp\wwwroot\Application\Wechat\View\default" />
       <recent name="D:\tp\wwwroot\Application\Wechat\View\default\Active" />
       <recent name="D:\tp\wwwroot\Application\Wechat\Controller" />
-      <recent name="D:\tp\wwwroot\Application\Wechat\View\default" />
       <recent name="D:\tp\wwwroot\Public\Wechat" />
-      <recent name="D:\tp\wwwroot\Application\Wechat\View\default\Index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -561,19 +476,19 @@
       <workItem from="1499432638335" duration="9582000" />
       <workItem from="1499474105452" duration="22805000" />
       <workItem from="1499522195138" duration="4658000" />
-      <workItem from="1499561277346" duration="1136000" />
+      <workItem from="1499561277346" duration="12369000" />
+      <workItem from="1499592828839" duration="9155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77364000" />
+    <option name="totallyTimeSpent" value="97752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26626325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -603,69 +518,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wwwroot/HTML_PATHlogin" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/Controller/UserController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-946">
-          <caret line="127" column="29" lean-forward="false" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Html/User/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Home/Controller/UserController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="94" column="39" lean-forward="false" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Public/var.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/HomeController.class.php" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/AddonsController.class.php" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/EmptyController.class.php" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ArticleController.class.php" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Home/View/default/User/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="35" column="82" lean-forward="false" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/readme.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3102">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Home/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-66">
@@ -697,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Model/MemberModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Common/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -715,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="48" column="108" lean-forward="false" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="83" column="127" lean-forward="false" selection-start-line="83" selection-start-column="127" selection-end-line="83" selection-end-column="127" />
         </state>
       </provider>
     </entry>
@@ -762,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/UserController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="86" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/noticedetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -795,6 +626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17204">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -802,50 +634,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2024">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Article/download/detail.html" />
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Article/article/detail.html" />
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="77" column="44" lean-forward="false" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/WechatController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="108" column="6" lean-forward="false" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="25" />
-          <folding>
-            <element signature="e#510#532#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ServiceController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1474">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
+          <caret line="72" column="5" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Html/login.shtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="76" column="10" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="76" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -857,47 +664,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/login.html">
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Service/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="10" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1143#1150#1" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="137" column="116" lean-forward="false" selection-start-line="137" selection-start-column="116" selection-end-line="137" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive.html" />
+    <entry file="file://$PROJECT_DIR$/wwwroot/Html/login.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="76" column="10" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="76" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/baoming.html" />
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="93" column="52" lean-forward="false" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Service/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
+        <state relative-caret-position="418">
           <caret line="60" column="7" lean-forward="false" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Service/index.html">
+    <entry file="file://$PROJECT_DIR$/wwwroot/ThinkPHP/Library/Think/Model.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="137" column="116" lean-forward="false" selection-start-line="137" selection-start-column="116" selection-end-line="137" selection-end-column="116" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1174#1181#1" expanded="true" />
-            <marker date="1499561962744" expanded="true" signature="4527:5459" ph="..." />
-            <marker date="1499561962744" expanded="true" signature="4621:5411" ph="..." />
-            <marker date="1499561962744" expanded="true" signature="4693:4792" ph="..." />
-            <marker date="1499561962744" expanded="true" signature="4693:4873" ph="..." />
-            <marker date="1499561962744" expanded="true" signature="4946:5017" ph="..." />
-            <marker date="1499561962744" expanded="true" signature="4946:5255" ph="..." />
-            <marker date="1499561962744" expanded="true" signature="4946:5361" ph="..." />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="1074" column="20" lean-forward="false" selection-start-line="1074" selection-start-column="20" selection-end-line="1074" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="48" column="64" lean-forward="false" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ActiveController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1100">
+          <caret line="82" column="77" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="77" />
+          <folding>
+            <marker date="1499566965559" expanded="true" signature="4576:5513" ph="..." />
+            <marker date="1499566965559" expanded="true" signature="4670:5465" ph="..." />
+            <marker date="1499566965559" expanded="true" signature="4742:4922" ph="..." />
+            <marker date="1499566965559" expanded="true" signature="4995:5415" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Public/Wechat/js/my.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="86" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Model/MemberModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/Controller/ActionController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -905,26 +779,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Active/index.html">
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/View/Active/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="138" column="153" lean-forward="false" selection-start-line="138" selection-start-column="153" selection-end-line="138" selection-end-column="153" />
+        <state relative-caret-position="54">
+          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="154" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/User/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="60" column="55" lean-forward="false" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/Index/my.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/View/Sale/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="61" column="3" lean-forward="false" selection-start-line="61" selection-start-column="3" selection-end-line="63" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/View/default/XQactive/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/XQactiveController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2398">
+          <caret line="114" column="33" lean-forward="false" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/Controller/ActiveController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1174#1181#1" expanded="true" />
-            <marker date="1499561989201" expanded="true" signature="4572:5509" ph="..." />
-            <marker date="1499561989201" expanded="true" signature="4666:5461" ph="..." />
-            <marker date="1499561989201" expanded="true" signature="4738:4918" ph="..." />
-            <marker date="1499561989201" expanded="true" signature="4991:5411" ph="..." />
+            <element signature="e#125#146#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Wechat/Controller/ActiveController.class.php">
+    <entry file="file://$PROJECT_DIR$/wwwroot/Application/Admin/Controller/SaleController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="308">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

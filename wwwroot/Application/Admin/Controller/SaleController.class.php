@@ -19,7 +19,7 @@ class SaleController extends AdminController
         //加载分页类
         import('ORG.Util.Page');
         $count=$list->where('status=1')->count();
-        $page       = new Page($count,2);// 实例化分页类 传入总记录数和每页显示的记录数
+        $page       = new Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数
 
         $show       = $page->show();// 分页显示输出
 // 进行分页数据查询 注意limit方法的参数要使用Page类的属性

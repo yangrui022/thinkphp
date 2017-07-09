@@ -18,3 +18,43 @@ INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002053s ]
 INFO: [ app_init ] --END-- [ RunTime:0.003100s ]
 ERR: 无法加载模块:Index
 
+[ 2017-07-09T10:27:58+08:00 ] 127.0.0.1 /notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001447s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001794s ]
+ERR: 无法加载模块:Notice
+
+[ 2017-07-09T11:01:37+08:00 ] 127.0.0.1 /yezhurenzheng.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001220s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001562s ]
+ERR: 无法加载模块:Yezhurenzheng
+
+[ 2017-07-09T11:43:51+08:00 ] 127.0.0.1 /Public/Wechat/js/my.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003915s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004697s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-09T17:40:59+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001299s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001681s ]
+
+[ 2017-07-09T19:15:10+08:00 ] 127.0.0.1 /Public/Admin/css/.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001440s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-09T19:15:10+08:00 ] 127.0.0.1 /Public/Admin/images/bg/bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001627s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002118s ]
+

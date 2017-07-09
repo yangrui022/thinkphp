@@ -15,7 +15,15 @@ class ActiveController extends WechatController
         $page=0;
         $pagesize=2;
         $service=M('document');
-        
+        //在首页不现实过期的数据 状态改为0
+        $data['status'] = 0;
+       $service->data($data)->where('category_id=40 AND deadline<'.time())->save();
+
+
+
+//
+
+
         $list=$service->where('status=1 AND category_id=40')->limit($page,$pagesize)->select();
         $this->assign('list',$list);
         $p=I('get.p');
