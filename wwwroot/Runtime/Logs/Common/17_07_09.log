@@ -1,0 +1,20 @@
+[ 2017-07-09T08:57:33+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001472s ]
+
+[ 2017-07-09T08:57:48+08:00 ] 127.0.0.1 /notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001478s ]
+ERR: 无法加载模块:Notice
+
+[ 2017-07-09T09:02:17+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003100s ]
+ERR: 无法加载模块:Index
+

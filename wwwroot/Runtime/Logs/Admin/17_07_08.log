@@ -1,0 +1,2301 @@
+[ 2017-07-08T10:55:52+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001664s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+
+[ 2017-07-08T10:55:52+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0319s ]
+SQL: SELECT `type`,`name`,`value` FROM `config` WHERE `status` = 1  [ RunTime:0.0004s ]
+
+[ 2017-07-08T10:55:53+08:00 ] 127.0.0.1 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004284s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-07-08T10:56:02+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0155s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `action` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `action_log` [ RunTime:0.0043s ]
+SQL: INSERT INTO `action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499482562','yangr在2017-07-08 10:56登录了后台') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 1 D:\tp\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\tp\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499396162 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `member` SET `login`=`login`+1,`last_login_time`='1499482562',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0005s ]
+
+[ 2017-07-08T10:56:03+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001485s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+
+[ 2017-07-08T10:56:06+08:00 ] 127.0.0.1 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001668s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-07-08T10:56:09+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-07-08T10:56:10+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-07-08T10:56:11+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001163s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-07-08T10:56:14+08:00 ] 127.0.0.1 /admin.php?s=/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+
+[ 2017-07-08T10:56:15+08:00 ] 127.0.0.1 /admin.php?s=/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001185s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-07-08T10:56:16+08:00 ] 127.0.0.1 /admin.php?s=/Menu/index/pid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001723s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+
+[ 2017-07-08T10:56:17+08:00 ] 127.0.0.1 /admin.php?s=/Menu/index/pid/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001671s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-07-08T10:56:22+08:00 ] 127.0.0.1 /admin.php?s=/Channel/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-07-08T10:56:23+08:00 ] 127.0.0.1 /admin.php?s=/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-07-08T10:56:24+08:00 ] 127.0.0.1 /admin.php?s=/Model/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-07-08T10:56:24+08:00 ] 127.0.0.1 /admin.php?s=/Category/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001589s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-07-08T10:56:27+08:00 ] 127.0.0.1 /admin.php?s=/Category/add/pid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-07-08T10:56:33+08:00 ] 127.0.0.1 /admin.php?s=/Category/edit/id/39/pid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-07-08T10:56:39+08:00 ] 127.0.0.1 /admin.php?s=/Category/add/pid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-07-08T10:58:59+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/prqsgnnh4r6m4819vh73712up2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001765s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-07-08T10:59:01+08:00 ] 127.0.0.1 /admin.php?s=/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `category` WHERE `name` = 'shop/hd' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: INSERT INTO `category` (`title`,`name`,`groups`,`allow_publish`,`check`,`icon`,`display`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('商家活动','shop/hd','','1','0','7','1','0','10','','','','','','','','0','1','1499482741','1499482741','1') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `action` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'update_category' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `action_log` [ RunTime:0.0034s ]
+SQL: INSERT INTO `action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('11','1','2130706433','category','40','1499482741','操作url：/admin.php?s=/Category/add.html') [ RunTime:0.0003s ]
+
+[ 2017-07-08T10:59:02+08:00 ] 127.0.0.1 /admin.php?s=/Category/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-07-08T10:59:04+08:00 ] 127.0.0.1 /admin.php?s=/Category/add/pid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001778s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-07-08T10:59:09+08:00 ] 127.0.0.1 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+
+[ 2017-07-08T10:59:11+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-07-08T10:59:11+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-07-08T10:59:12+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+
+[ 2017-07-08T10:59:14+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/39/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001249s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-07-08T11:00:14+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0046s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'check_catgory_model' not found or invalid function name D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1420 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0037s ]
+SQL: SELECT `check` FROM `category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('飞毛腿服务！','','','2','1','0','0','0','0','1499482814','0','0','0','2','0','39','1','0','0','0','1499482814','3','0') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0067s ]
+SQL: INSERT INTO `document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('','0','0','','4') [ RunTime:0.0008s ]
+
+[ 2017-07-08T11:00:29+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0052s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `document` SET `title`='优生优育服务！！',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='0',`view`='0',`comment`='0',`create_time`='1499482829',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='39',`root`='0',`update_time`='1499482829',`status`='1',`position`='0' WHERE `id` = 4 [ RunTime:0.0172s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0045s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	优生优育服务！！优生优育服务！！优生优育服务！！优生优育服务！！优生优育服务！！优生优育服务！！
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=639152910,3009962631&amp;fm=116&amp;gp=0.jpg\" alt=\"\" />
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=336481408,225392408&amp;fm=116&amp;gp=0.jpg\" alt=\"\" />
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 4 [ RunTime:0.0003s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.037264s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.037312s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T11:00:31+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002526s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-07-08T11:00:40+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/39/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-07-08T11:00:48+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/4/model/2/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001277s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+
+[ 2017-07-08T11:01:09+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/prqsgnnh4r6m4819vh73712up2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-07-08T11:01:37+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0052s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `document` SET `title`='优生优育服务！！',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='9',`view`='0',`comment`='0',`create_time`='1499482800',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='39',`root`='0',`update_time`='1499482897',`status`='1',`position`='0' WHERE `id` = 4 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0036s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	优生优育服务！！优生优育服务！！优生优育服务！！优生优育服务！！优生优育服务！！优生优育服务！！
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=639152910,3009962631&fm=116&gp=0.jpg\" alt=\"\" /> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=336481408,225392408&fm=116&gp=0.jpg\" alt=\"\" /> 
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 4 [ RunTime:0.0003s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001442s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001479s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T11:01:38+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001670s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-07-08T11:01:53+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/39/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+
+[ 2017-07-08T11:02:53+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002344s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0076s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'check_catgory_model' not found or invalid function name D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1420 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0063s ]
+SQL: SELECT `check` FROM `category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('飞毛腿服务！','','','2','1','0','0','0','0','1499482973','0','0','0','2','0','39','1','0','0','0','1499482973','3','0') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0056s ]
+SQL: INSERT INTO `document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<p>
+	<strong><span style=\"background-color:#E53333;\">飞毛腿服务！</span></strong>
+</p>
+<p>
+	<span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span>
+</p>
+<p>
+	<span style=\"background-color:#4C33E5;\"><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><br />
+</span>
+</p>
+<p>
+	<span style=\"background-color:#4C33E5;\"><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><br />
+</span>
+</p>','0','0','','5') [ RunTime:0.0006s ]
+
+[ 2017-07-08T11:03:00+08:00 ] 127.0.0.1 /admin.php?s=/Addons/execute/_addons/EditorForAdmin/_controller/Upload/_action/ke_upimg.html&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001271s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `addons` [ RunTime:0.0034s ]
+SQL: SELECT `title`,`name` FROM `addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0003s ]
+
+[ 2017-07-08T11:03:00+08:00 ] 127.0.0.1 /admin.php?s=/Addons/execute/_addons/EditorForAdmin/_controller/Upload/_action/ke_upimg.html&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `addons` [ RunTime:0.0034s ]
+SQL: SELECT `title`,`name` FROM `addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0003s ]
+
+[ 2017-07-08T11:03:08+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001874s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0050s ]
+
+[ 2017-07-08T11:03:12+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0166s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `document` SET `title`='飞毛腿服务！',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='0',`view`='0',`comment`='0',`create_time`='1499482991',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='39',`root`='0',`update_time`='1499482991',`status`='1',`position`='0' WHERE `id` = 5 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0812s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0883s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	<strong><span style=\"background-color:#E53333;\">飞毛腿服务！</span></strong>
+</p>
+<p>
+	<span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span>
+</p>
+<p>
+	<span style=\"background-color:#4C33E5;\"><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><br />
+</span>
+</p>
+<p>
+	<span style=\"background-color:#4C33E5;\"><span style=\"background-color:#E53333;\"><strong>专业跑腿服<img src=\"/Uploads/Editor/2017-07-08/59604b6469163.jpg\" alt=\"\" /><img src=\"/Uploads/Editor/2017-07-08/59604b64840b9.jpg\" alt=\"\" />务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><br />
+</span>
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 5 [ RunTime:0.0010s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.004458s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.004627s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T11:03:13+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002369s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-07-08T11:36:12+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/5/model/2/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001848s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+
+[ 2017-07-08T11:36:23+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/5/model/2/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003379s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-07-08T11:36:32+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/prqsgnnh4r6m4819vh73712up2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+
+[ 2017-07-08T11:36:33+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003743s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0108s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `document` SET `title`='飞毛腿服务！',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='10',`view`='1',`comment`='0',`create_time`='1499482980',`deadline`='0',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='39',`root`='0',`update_time`='1499484993',`status`='1',`position`='0' WHERE `id` = 5 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0246s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	<strong><span style=\"background-color:#E53333;\">飞毛腿服务！</span></strong> 
+</p>
+<p>
+	<span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span> 
+</p>
+<p>
+	<span style=\"background-color:#4C33E5;\"><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><br />
+</span> 
+</p>
+<p>
+	<span style=\"background-color:#4C33E5;\"><span style=\"background-color:#E53333;\"><strong>专业跑腿服<img src=\"/Uploads/Editor/2017-07-08/59604b6469163.jpg\" alt=\"\" /><img src=\"/Uploads/Editor/2017-07-08/59604b64840b9.jpg\" alt=\"\" />务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><span style=\"background-color:#E53333;\"><strong>专业跑腿服务</strong></span><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><strong><span style=\"background-color:#E53333;\"></span></strong><br />
+</span> 
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 5 [ RunTime:0.0006s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001578s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001615s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T11:36:35+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002774s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+
+[ 2017-07-08T14:18:26+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+
+[ 2017-07-08T14:18:27+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/39/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001674s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-07-08T14:19:27+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/prqsgnnh4r6m4819vh73712up2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003448s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+
+[ 2017-07-08T14:19:28+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001763s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0073s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'check_catgory_model' not found or invalid function name D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1420 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0061s ]
+SQL: SELECT `check` FROM `category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('免费接水，不用等待！','','','2','1','0','11','0','0','1499494768','0','0','0','2','0','39','1','0','0','0','1499494768','3','0') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0056s ]
+SQL: INSERT INTO `document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<p>
+	免费接水，不用等待！免费接水，不用等待！免费接水，不用等待！
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=785592861,1359436525&amp;fm=58\" alt=\"\" />
+</p>
+<p>
+	<img src=\"http://h.hiphotos.baidu.com/baike/w%3D480/sign=7e875bc333c79f3d8fe1e5388aa0cdbc/0e2442a7d933c89566f98647d91373f082020002.jpg\" alt=\"\" />
+</p>','0','0','','6') [ RunTime:0.0003s ]
+
+[ 2017-07-08T14:19:29+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001642s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0048s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `document` SET `title`='免费接水，不用等待！',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='11',`view`='0',`comment`='0',`create_time`='1499494769',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='39',`root`='0',`update_time`='1499494769',`status`='1',`position`='0' WHERE `id` = 6 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0052s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	免费接水，不用等待！免费接水，不用等待！免费接水，不用等待！
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=785592861,1359436525&amp;fm=58\" alt=\"\" />
+</p>
+<p>
+	<img src=\"http://h.hiphotos.baidu.com/baike/w%3D480/sign=7e875bc333c79f3d8fe1e5388aa0cdbc/0e2442a7d933c89566f98647d91373f082020002.jpg\" alt=\"\" />
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 6 [ RunTime:0.0003s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001442s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001479s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T14:19:31+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-07-08T15:50:06+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/39/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001715s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-07-08T15:50:36+08:00 ] 127.0.0.1 /admin.php?s=/Addons/execute/_addons/EditorForAdmin/_controller/Upload/_action/ke_upimg.html&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001732s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `addons` [ RunTime:0.0043s ]
+SQL: SELECT `title`,`name` FROM `addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0003s ]
+
+[ 2017-07-08T15:50:36+08:00 ] 127.0.0.1 /admin.php?s=/Addons/execute/_addons/EditorForAdmin/_controller/Upload/_action/ke_upimg.html&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002598s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `addons` [ RunTime:0.0145s ]
+SQL: SELECT `title`,`name` FROM `addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0002s ]
+
+[ 2017-07-08T15:50:36+08:00 ] 127.0.0.1 /admin.php?s=/Addons/execute/_addons/EditorForAdmin/_controller/Upload/_action/ke_upimg.html&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001897s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `addons` [ RunTime:0.0044s ]
+SQL: SELECT `title`,`name` FROM `addons` WHERE ( status=1 AND has_adminlist=1 )  [ RunTime:0.0003s ]
+
+[ 2017-07-08T15:50:43+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002690s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0052s ]
+SQL: SELECT `check` FROM `category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('冲多少送多少！','','adasdsadasd','2','1','0','0','0','0','1499500243','0','0','0','2','0','39','1','0','0','0','1499500243','1','0') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0041s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: INSERT INTO `document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<p>
+	冲多少送多少！
+</p>
+<p>
+	冲多少送多少！
+</p>
+<p>
+	冲多少送多少！
+</p>
+<p>
+	冲多少送多少！
+</p>
+<p>
+	<img src=\"/Uploads/Editor/2017-07-08/59608ecc441d9.jpg\" alt=\"\" /><img src=\"/Uploads/Editor/2017-07-08/59608ecc5c352.jpg\" alt=\"\" /><img src=\"/Uploads/Editor/2017-07-08/59608ecc7cb81.jpg\" alt=\"\" />
+</p>','0','0','','7') [ RunTime:0.0004s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001339s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `action` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'add_document' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-07-08T15:50:44+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-07-08T16:36:56+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001164s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-07-08T16:36:58+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/40/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-07-08T16:37:03+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-07-08T16:37:04+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/39/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001220s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-07-08T16:37:05+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+
+[ 2017-07-08T16:37:07+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/40/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+
+[ 2017-07-08T16:37:12+08:00 ] 127.0.0.1 /admin.php?s=/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001169s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-07-08T16:37:14+08:00 ] 127.0.0.1 /admin.php?s=/Model/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-07-08T16:37:20+08:00 ] 127.0.0.1 /admin.php?s=/model/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002438s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+
+[ 2017-07-08T16:37:30+08:00 ] 127.0.0.1 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001666s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-07-08T16:37:34+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002542s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-07-08T16:37:42+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/40/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001981s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-07-08T16:37:51+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001760s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-07-08T16:37:52+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001850s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+
+[ 2017-07-08T16:37:52+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001727s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-07-08T16:37:53+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002515s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-07-08T16:37:53+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002474s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+
+[ 2017-07-08T16:37:54+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001840s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-07-08T16:37:55+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001946s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+
+[ 2017-07-08T16:37:55+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-07-08T16:37:56+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-07-08T16:38:00+08:00 ] 127.0.0.1 /admin.php?s=/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+
+[ 2017-07-08T16:38:01+08:00 ] 127.0.0.1 /admin.php?s=/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+
+[ 2017-07-08T16:38:03+08:00 ] 127.0.0.1 /admin.php?s=/Menu/index/pid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001287s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+
+[ 2017-07-08T16:38:06+08:00 ] 127.0.0.1 /admin.php?s=/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+
+[ 2017-07-08T16:38:07+08:00 ] 127.0.0.1 /admin.php?s=/Category/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+
+[ 2017-07-08T16:38:12+08:00 ] 127.0.0.1 /admin.php?s=/Category/edit/id/40/pid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+
+[ 2017-07-08T16:38:24+08:00 ] 127.0.0.1 /admin.php?s=/Category/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001383s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `category` WHERE `name` = 'shop/hd' AND `id` <> '40' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `category` SET `title`='商家活动',`name`='shop/hd',`groups`='',`allow_publish`='1',`check`='0',`type`='2',`model`='2',`model_sub`='2',`icon`='7',`display`='1',`sort`='0',`list_row`='10',`meta_title`='',`keywords`='',`description`='',`template_index`='',`template_lists`='',`template_detail`='',`template_edit`='',`pid`='1',`update_time`='1499503104',`status`='1' WHERE `id` = 40 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `action` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'update_category' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `action_log` [ RunTime:0.0051s ]
+SQL: INSERT INTO `action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('11','1','2130706433','category','40','1499503104','操作url：/admin.php?s=/Category/edit.html') [ RunTime:0.0513s ]
+
+[ 2017-07-08T16:38:26+08:00 ] 127.0.0.1 /admin.php?s=/Category/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-07-08T16:38:29+08:00 ] 127.0.0.1 /admin.php?s=/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+
+[ 2017-07-08T16:38:31+08:00 ] 127.0.0.1 /admin.php?s=/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001780s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-07-08T16:38:32+08:00 ] 127.0.0.1 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003245s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-07-08T16:38:34+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-07-08T16:38:35+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/40/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+
+[ 2017-07-08T16:39:35+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001748s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0095s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'check_catgory_model' not found or invalid function name D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1420 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0055s ]
+SQL: SELECT `check` FROM `category` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('红旗连锁 全场9折','','','2','1','0','0','0','0','1499503175','0','0','0','2','0','40','1','0','0','0','1499503175','3','0') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0043s ]
+SQL: INSERT INTO `document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>','0','0','','8') [ RunTime:0.0005s ]
+
+[ 2017-07-08T16:40:04+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002585s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0073s ]
+SQL: SELECT `id`,`title`,`pid` FROM `category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0051s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `category` WHERE `status` > -1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `document` WHERE `name` = 'yu' AND `id` <> '8' AND `status` <> -1 AND `category_id` IN ('1','39','40','2') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `document` SET `title`='红旗连锁 全场9折',`name`='yu',`description`='红旗连锁 全场9折​
+红旗连锁 全场9折​',`type`='2',`display`='1',`level`='0',`cover_id`='0',`view`='0',`comment`='0',`create_time`='1499503204',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='40',`root`='0',`update_time`='1499503204',`status`='1',`position`='0' WHERE `id` = 8 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0050s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0073s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" />
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" />
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" />
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 8 [ RunTime:0.0004s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001491s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001531s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T16:40:05+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001378s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-07-08T16:40:14+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-07-08T17:09:34+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001731s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-07-08T17:13:02+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/8/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001988s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-07-08T17:13:04+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/8/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001719s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-07-08T17:13:05+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004300s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-07-08T17:16:08+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001834s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-07-08T22:14:58+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001974s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-07-08T22:14:58+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002824s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-07-08T22:14:59+08:00 ] 127.0.0.1 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004757s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003618s ]
+
+[ 2017-07-08T22:15:06+08:00 ] 127.0.0.1 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001714s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0755s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `action` [ RunTime:0.0482s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `action_log` [ RunTime:0.0273s ]
+SQL: INSERT INTO `action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499523306','yangr在2017-07-08 22:15登录了后台') [ RunTime:0.0605s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 1 D:\tp\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\tp\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499436906 LIMIT 1   [ RunTime:0.0803s ]
+SQL: UPDATE `member` SET `login`=`login`+1,`last_login_time`='1499523306',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0192s ]
+
+[ 2017-07-08T22:15:07+08:00 ] 127.0.0.1 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003852s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+
+[ 2017-07-08T22:15:09+08:00 ] 127.0.0.1 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001909s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-07-08T22:15:13+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001638s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+
+[ 2017-07-08T22:15:14+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001711s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-07-08T22:15:14+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001733s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+
+[ 2017-07-08T22:15:15+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001630s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-07-08T22:15:19+08:00 ] 127.0.0.1 /admin.php?s=/Article/setStatus/status/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001639s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0210s ]
+SQL: UPDATE `document` SET `status`='0' WHERE `id` IN ('8') [ RunTime:0.0003s ]
+
+[ 2017-07-08T22:15:21+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007787s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+
+[ 2017-07-08T22:15:25+08:00 ] 127.0.0.1 /admin.php?s=/Article/setStatus/status/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001739s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0381s ]
+SQL: UPDATE `document` SET `status`='1' WHERE `id` IN ('8') [ RunTime:0.0006s ]
+
+[ 2017-07-08T22:15:26+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003813s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2017-07-08T22:16:48+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/8/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001858s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-07-08T22:16:52+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/8/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001709s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+
+[ 2017-07-08T22:17:19+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001225s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`title`,`pid` FROM `category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `category` WHERE `status` > -1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `document` WHERE `name` = 'yu' AND `id` <> '8' AND `status` <> -1 AND `category_id` IN ('1','39','40','2') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `document` SET `title`='红旗连锁 全场9折',`name`='yu',`description`='红旗连锁 全场9折​
+红旗连锁 全场9折​',`type`='2',`display`='1',`level`='0',`cover_id`='0',`view`='0',`comment`='0',`create_time`='1499503200',`deadline`='1499609760',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='40',`root`='0',`update_time`='1499523439',`status`='1',`position`='0' WHERE `id` = 8 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0046s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 8 [ RunTime:0.0004s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.017798s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.017843s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T22:17:20+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001378s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+
+[ 2017-07-08T22:17:25+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/8/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001272s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-07-08T22:56:22+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002984s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-07-08T23:04:14+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/8/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001214s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+
+[ 2017-07-08T23:04:23+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/vv5vhjnq5rqttqeeckr927q9j4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+
+[ 2017-07-08T23:04:24+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001242s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0267s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`title`,`pid` FROM `category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `category` WHERE `status` > -1 ORDER BY `sort`  [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `document` WHERE `name` = 'yu' AND `id` <> '8' AND `status` <> -1 AND `category_id` IN ('1','39','40','2') LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `document` SET `title`='红旗连锁 全场9折',`name`='yu',`description`='红旗连锁 全场9折​
+红旗连锁 全场9折​',`type`='2',`display`='1',`level`='0',`cover_id`='12',`view`='1',`comment`='0',`create_time`='1499503200',`deadline`='1499609760',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='40',`root`='0',`update_time`='1499526264',`status`='1',`position`='0' WHERE `id` = 8 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0051s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 8 [ RunTime:0.0003s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001359s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001395s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T23:04:26+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002484s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+
+[ 2017-07-08T23:05:56+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/40/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001669s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-07-08T23:06:39+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/vv5vhjnq5rqttqeeckr927q9j4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+
+[ 2017-07-08T23:06:48+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0305s ]
+
+[ 2017-07-08T23:06:57+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0485s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'check_catgory_model' not found or invalid function name D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1420 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0127s ]
+SQL: SELECT `check` FROM `category` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`deadline`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('淘清仓【应季单品','','','2','1','0','13','0','0','1499526300','1499612700','0','0','0','2','0','40','1','0','0','0','1499526416','3','0') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0114s ]
+SQL: INSERT INTO `document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<h3 style=\"font-size:16px;font-family:宋体;color:#333333;background-color:#F1F2F7;\">
+	淘清仓<span class=\"bmlmstyle\" style=\"color:#FF4001;line-height:40px;\">【应季单品】</span>
+</h3>
+<p style=\"margin-left:20px;font-size:13px;font-family:宋体;background-color:#F1F2F7;color:#999999;\">
+	1、商品要求为：应季商品<br />
+2、卖家信用积分：1钻及以上<br />
+3、开店时间≥90天<br />
+4、加入消费者保障，并加入七天退换货<br />
+5、描述≥4.6 、服务≥4.6 、发货≥4.6<br />
+6、品牌商需持有该品牌的销售资质证明..
+</p>
+<p style=\"margin-left:20px;font-size:13px;font-family:宋体;background-color:#F1F2F7;color:#999999;\">
+	<h3 style=\"font-size:16px;font-family:宋体;color:#333333;background-color:#F1F2F7;\">
+		淘清仓<span class=\"bmlmstyle\" style=\"color:#FF4001;line-height:40px;\">【优品清仓】</span>
+	</h3>
+	<p style=\"margin-left:20px;font-size:13px;font-family:宋体;background-color:#F1F2F7;color:#999999;\">
+		1、商品价格为：性价比高并且10元至29.99之间<br />
+2、卖家信用积分：1钻及以上<br />
+3、开店时间≥90天<br />
+4、加入消费者保障，并加入七天退换货...
+	</p>
+</p>','0','0','','9') [ RunTime:0.0010s ]
+
+[ 2017-07-08T23:06:59+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0296s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `document` SET `title`='淘清仓【应季单品】',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='13',`view`='0',`comment`='0',`create_time`='1499526300',`deadline`='1499612700',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='40',`root`='0',`update_time`='1499526419',`status`='1',`position`='0' WHERE `id` = 9 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0047s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<h3 style=\"font-size:16px;font-family:宋体;color:#333333;background-color:#F1F2F7;\">
+	淘清仓<span class=\"bmlmstyle\" style=\"color:#FF4001;line-height:40px;\">【应季单品】</span>
+</h3>
+<p style=\"margin-left:20px;font-size:13px;font-family:宋体;background-color:#F1F2F7;color:#999999;\">
+	1、商品要求为：应季商品<br />
+2、卖家信用积分：1钻及以上<br />
+3、开店时间≥90天<br />
+4、加入消费者保障，并加入七天退换货<br />
+5、描述≥4.6 、服务≥4.6 、发货≥4.6<br />
+6、品牌商需持有该品牌的销售资质证明..
+</p>
+<p style=\"margin-left:20px;font-size:13px;font-family:宋体;background-color:#F1F2F7;color:#999999;\">
+	<h3 style=\"font-size:16px;font-family:宋体;color:#333333;background-color:#F1F2F7;\">
+		淘清仓<span class=\"bmlmstyle\" style=\"color:#FF4001;line-height:40px;\">【优品清仓】</span>
+	</h3>
+	<p style=\"margin-left:20px;font-size:13px;font-family:宋体;background-color:#F1F2F7;color:#999999;\">
+		1、商品价格为：性价比高并且10元至29.99之间<br />
+2、卖家信用积分：1钻及以上<br />
+3、开店时间≥90天<br />
+4、加入消费者保障，并加入七天退换货...
+	</p>
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 9 [ RunTime:0.0003s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001525s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001562s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T23:07:01+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004224s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+
+[ 2017-07-08T23:07:06+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/40/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001298s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+
+[ 2017-07-08T23:08:07+08:00 ] 127.0.0.1 /admin.php?s=/article/autoSave.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003910s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0104s ]
+NOTIC: [2] call_user_func_array() expects parameter 1 to be a valid callback, function 'check_catgory_model' not found or invalid function name D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1420 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0083s ]
+SQL: SELECT `check` FROM `category` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `document` (`title`,`name`,`description`,`type`,`display`,`level`,`cover_id`,`view`,`comment`,`create_time`,`link_id`,`id`,`pid`,`model_id`,`group_id`,`category_id`,`uid`,`root`,`attach`,`extend`,`update_time`,`status`,`position`) VALUES ('唯品会6周年 最高满198减100','','','2','1','0','0','0','0','1499526487','0','0','0','2','0','40','1','0','0','0','1499526487','3','0') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0073s ]
+SQL: INSERT INTO `document_article` (`content`,`parse`,`bookmark`,`template`,`id`) VALUES ('<h3 style=\"font-size:16px;color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\">唯品会6周年 最高满198减100</a>
+</h3>
+<div class=\"discount-pic\" style=\"margin:0px;padding:0px;border:0px;color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\"><img src=\"http://www.yifen.com/img/files/2014/12/df39932b-ccce-43ed-b3d5-1a253f55d9fe.jpg\" alt=\"唯品会6周年 最高满198减100\" width=\"470\" /></a>
+</div>','0','0','','10') [ RunTime:0.0005s ]
+
+[ 2017-07-08T23:08:11+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001597s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0061s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `document` SET `title`='唯品会6周年 最高满198减100',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='0',`view`='0',`comment`='0',`create_time`='1499526491',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='40',`root`='0',`update_time`='1499526491',`status`='1',`position`='0' WHERE `id` = 10 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0067s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<h3 style=\"font-size:16px;color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\">唯品会6周年 最高满198减100</a>
+</h3>
+<p style=\"color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\"><img src=\"http://www.yifen.com/img/files/2014/12/df39932b-ccce-43ed-b3d5-1a253f55d9fe.jpg\" alt=\"唯品会6周年 最高满198减100\" width=\"470\" /></a>
+</p>
+<p style=\"color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\"><img src=\"http://www.yifen.com/img/files/2014/12/df39932b-ccce-43ed-b3d5-1a253f55d9fe.jpg\" alt=\"唯品会6周年 最高满198减100\" width=\"470\" /></a>
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 10 [ RunTime:0.0005s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001518s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001577s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T23:08:13+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003975s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+
+[ 2017-07-08T23:08:35+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/10/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-07-08T23:09:29+08:00 ] 127.0.0.1 /admin.php?s=/File/uploadPicture/session_id/vv5vhjnq5rqttqeeckr927q9j4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001613s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-07-08T23:09:31+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001162s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0051s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `document` SET `title`='唯品会6周年 最高满198减100',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='14',`view`='1',`comment`='0',`create_time`='1499526480',`deadline`='0',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='40',`root`='0',`update_time`='1499526571',`status`='1',`position`='0' WHERE `id` = 10 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0053s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<h3 style=\"font-size:16px;color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\">唯品会6周年 最高满198减100</a> 
+</h3>
+<p style=\"color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\"><img src=\"http://www.yifen.com/img/files/2014/12/df39932b-ccce-43ed-b3d5-1a253f55d9fe.jpg\" alt=\"唯品会6周年 最高满198减100\" width=\"470\" /></a> 
+</p>
+<p style=\"color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\"><img src=\"http://www.yifen.com/img/files/2014/12/df39932b-ccce-43ed-b3d5-1a253f55d9fe.jpg\" alt=\"唯品会6周年 最高满198减100\" width=\"470\" /></a> 
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 10 [ RunTime:0.0003s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001586s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001628s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T23:09:33+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002620s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+
+[ 2017-07-08T23:09:35+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/10/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-07-08T23:09:53+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001654s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0068s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `document` SET `title`='唯品会6周年 最高满198减100',`name`='',`description`='',`type`='2',`display`='1',`level`='0',`cover_id`='14',`view`='1',`comment`='0',`create_time`='1499526480',`deadline`='1499612880',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='40',`root`='0',`update_time`='1499526593',`status`='1',`position`='0' WHERE `id` = 10 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0056s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<h3 style=\"font-size:16px;color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\">唯品会6周年 最高满198减100</a> 
+</h3>
+<p style=\"color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\"><img src=\"http://www.yifen.com/img/files/2014/12/df39932b-ccce-43ed-b3d5-1a253f55d9fe.jpg\" alt=\"唯品会6周年 最高满198减100\" width=\"470\" /></a> 
+</p>
+<p style=\"color:#666666;font-family:Arial, SimSun;background-color:#FFFFFF;\">
+	<a href=\"http://www.vip.com/1203/?day=7\" target=\"_blank\" class=\"js-log\"><img src=\"http://www.yifen.com/img/files/2014/12/df39932b-ccce-43ed-b3d5-1a253f55d9fe.jpg\" alt=\"唯品会6周年 最高满198减100\" width=\"470\" /></a> 
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 10 [ RunTime:0.0003s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001688s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001777s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T23:09:55+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003689s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002049s ]
+
+[ 2017-07-08T23:11:50+08:00 ] 127.0.0.1 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001319s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+
+[ 2017-07-08T23:11:52+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/1/model/1/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001693s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+
+[ 2017-07-08T23:12:04+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001190s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`title`,`pid` FROM `category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `category` WHERE `status` > -1 ORDER BY `sort`  [ RunTime:0.0004s ]
+SQL: SELECT `id` FROM `document` WHERE `name` = 'admin' AND `id` <> '1' AND `status` <> -1 AND `category_id` IN ('1','39','40','2') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `document` SET `title`='OneThink1.1开发版发布',`name`='admin',`description`='期待已久的OneThink最新版发布',`type`='2',`display`='1',`level`='0',`cover_id`='1',`view`='21',`comment`='0',`create_time`='1406001360',`deadline`='1499958480',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='2',`root`='0',`update_time`='1499526724',`status`='1',`position`='0' WHERE `id` = 1 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0048s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<h1>
+	OneThink1.1开发版发布&nbsp;
+</h1>
+<p>
+	<br />
+</p>
+<p>
+	<strong>OneThink是一个开源的内容管理框架，基于最新的ThinkPHP3.2版本开发，提供更方便、更安全的WEB应用开发体验，采用了全新的架构设计和命名空间机制，融合了模块化、驱动化和插件化的设计理念于一体，开启了国内WEB应用傻瓜式开发的新潮流。&nbsp;</strong> 
+</p>
+<h2>
+	主要特性：
+</h2>
+<p>
+	1. 基于ThinkPHP最新3.2版本。
+</p>
+<p>
+	2. 模块化：全新的架构和模块化的开发机制，便于灵活扩展和二次开发。&nbsp;
+</p>
+<p>
+	3. 文档模型/分类体系：通过和文档模型绑定，以及不同的文档类型，不同分类可以实现差异化的功能，轻松实现诸如资讯、下载、讨论和图片等功能。
+</p>
+<p>
+	4. 开源免费：OneThink遵循Apache2开源协议,免费提供使用。&nbsp;
+</p>
+<p>
+	5. 用户行为：支持自定义用户行为，可以对单个用户或者群体用户的行为进行记录及分享，为您的运营决策提供有效参考数据。
+</p>
+<p>
+	6. 云端部署：通过驱动的方式可以轻松支持平台的部署，让您的网站无缝迁移，内置已经支持SAE和BAE3.0。
+</p>
+<p>
+	7. 云服务支持：即将启动支持云存储、云安全、云过滤和云统计等服务，更多贴心的服务让您的网站更安心。
+</p>
+<p>
+	8. 安全稳健：提供稳健的安全策略，包括备份恢复、容错、防止恶意攻击登录，网页防篡改等多项安全管理功能，保证系统安全，可靠、稳定的运行。&nbsp;
+</p>
+<p>
+	9. 应用仓库：官方应用仓库拥有大量来自第三方插件和应用模块、模板主题，有众多来自开源社区的贡献，让您的网站“One”美无缺。&nbsp;
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<strong>&nbsp;OneThink集成了一个完善的后台管理体系和前台模板标签系统，让你轻松管理数据和进行前台网站的标签式开发。&nbsp;</strong> 
+</p>
+<p>
+	<br />
+</p>
+<h2>
+	后台主要功能：
+</h2>
+<p>
+	1. 用户Passport系统
+</p>
+<p>
+	2. 配置管理系统&nbsp;
+</p>
+<p>
+	3. 权限控制系统
+</p>
+<p>
+	4. 后台建模系统&nbsp;
+</p>
+<p>
+	5. 多级分类系统&nbsp;
+</p>
+<p>
+	6. 用户行为系统&nbsp;
+</p>
+<p>
+	7. 钩子和插件系统
+</p>
+<p>
+	8. 系统日志系统&nbsp;
+</p>
+<p>
+	9. 数据备份和还原
+</p>
+<p>
+	<br />
+</p>
+<p>
+	&nbsp;[ 官方下载：&nbsp;<a href=\"http://www.onethink.cn/download.html\" target=\"_blank\">http://www.onethink.cn/download.html</a>&nbsp;&nbsp;开发手册：<a href=\"http://document.onethink.cn/\" target=\"_blank\">http://document.onethink.cn/</a>&nbsp;]&nbsp;
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<strong>OneThink开发团队 2013~2014</strong> 
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 1 [ RunTime:0.0004s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001388s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001432s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T23:12:06+08:00 ] 127.0.0.1 /admin.php?s=/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+
+[ 2017-07-08T23:19:32+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-07-08T23:19:32+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001808s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-07-08T23:19:32+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-07-08T23:19:33+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001981s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-07-08T23:19:33+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001713s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+
+[ 2017-07-08T23:19:34+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-07-08T23:19:35+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-07-08T23:19:35+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001312s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+
+[ 2017-07-08T23:19:36+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-07-08T23:20:31+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2017-07-08T23:20:35+08:00 ] 127.0.0.1 /admin.php?s=/article/add/cate_id/40/pid/0/model_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-07-08T23:33:46+08:00 ] 127.0.0.1 /admin.php?s=/Article/setStatus/status/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001956s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0066s ]
+SQL: UPDATE `document` SET `status`='0' WHERE `id` IN ('10') [ RunTime:0.0004s ]
+
+[ 2017-07-08T23:33:48+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001399s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-07-08T23:35:22+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+
+[ 2017-07-08T23:35:27+08:00 ] 127.0.0.1 /admin.php?s=/Article/edit/id/8/model/2/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-07-08T23:35:34+08:00 ] 127.0.0.1 /admin.php?s=/Article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001270s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `document` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`title`,`pid` FROM `category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `category` WHERE `status` > -1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `document` WHERE `name` = 'yu' AND `id` <> '8' AND `status` <> -1 AND `category_id` IN ('1','39','40','2') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `status` FROM `document` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `document` SET `title`='红旗连锁 全场9折',`name`='yu',`description`='红旗连锁 全场9折​
+红旗连锁 全场9折​',`type`='2',`display`='1',`level`='0',`cover_id`='12',`view`='2',`comment`='0',`create_time`='1499503200',`deadline`='1499177760',`link_id`='0',`pid`='0',`model_id`='2',`group_id`='0',`category_id`='40',`root`='0',`update_time`='1499528134',`status`='1',`position`='0' WHERE `id` = 8 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `document_article` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `model` [ RunTime:0.0048s ]
+SQL: SELECT `extend` FROM `model` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `attribute` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `attribute` WHERE `model_id` IN ('2','1')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 115 行.
+NOTIC: [2] Missing argument 1 for arr2str() D:\tp\wwwroot\Application\Common\Common\function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\tp\wwwroot\Application\Common\Common\function.php 第 62 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+NOTIC: [2] strtotime() expects at least 1 parameter, 0 given D:\tp\wwwroot\ThinkPHP\Library\Think\Model.class.php 第 1264 行.
+SQL: UPDATE `document_article` SET `content`='<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	红旗连锁 全场9折
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>
+<p>
+	<img src=\"http://xiaoqu.okiter.com/Uploads/Editor/2017-03-08/58bf751c8b508.jpg\" alt=\"\" /> 
+</p>',`parse`='0',`bookmark`='0',`template`='' WHERE `id` = 8 [ RunTime:0.0003s ]
+INFO: [ documentSaveComplete ] --START--
+INFO: Run Addons\Attachment\AttachmentAddon [ RunTime:0.001498s ]
+INFO: [ documentSaveComplete ] --END-- [ RunTime:0.001536s ]
+NOTIC: [8] Undefined variable: id D:\tp\wwwroot\Application\Admin\Model\DocumentModel.class.php 第 126 行.
+
+[ 2017-07-08T23:35:35+08:00 ] 127.0.0.1 /admin.php?s=/Article/index/cate_id/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001478s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+
