@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="59cad27f-1672-4f9b-b55a-3f407babc734" name="xiaoqu" url="http://yr.arlen.top">
+        <fileTransfer host="yr.arlen.top" port="21" rootFolder="/xiaoqu">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

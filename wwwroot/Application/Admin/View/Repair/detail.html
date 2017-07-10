@@ -1,0 +1,41 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>报修详情</h2>
+    </div>
+    <form action="" method="post" class="form-horizontal">
+        <div class="form-item">
+            <span class="item-label">报修编号：<span class="check-tips">{$info.repair_no}</span></span>
+        </div>
+        <div class="form-item">
+            <span class="item-label">状态：<span class="check-tips">{:$info['status']==1?'处理中':'处理完成'}</span></span>
+        </div>
+        <div class="form-item">
+            <span class="item-label">报修人：<span class="check-tips">{$info.username}</span></span>
+        </div>
+        <div class="form-item">
+            <span class="item-label">报修人电话：<span class="check-tips">{$info.tel}</span></span>
+        </div>
+        <div class="form-item">
+            <span class="item-label">标题：<span class="check-tips">{$info.title}</span></span>
+        </div>
+        <div class="form-item">
+            <label class="item-label">说明</label>
+            <div class="controls">
+                <label class="textarea input-large">
+                    <textarea disabled name="remark">{$info.content}</textarea>
+                </label>
+            </div>
+        </div>
+    </form>
+
+    </div>
+    <div class="cont-ft">
+        <div class="copyright">
+            <div class="fl">感谢使用<a href="http://www.onethink.cn" target="_blank">OneThink</a>管理平台</div>
+            <div class="fr">V1.1.141101</div>
+        </div>
+    </div>
+    </div>
+</block>
